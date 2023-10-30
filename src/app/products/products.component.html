@@ -1,0 +1,54 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-body">
+
+        <input type="text" class="p-1" [(ngModel)]="appSatate.productsState.keyword">
+   <button (click)="searchProducts()" class="btn btn-outline-success ms-1">
+     <i class="bi bi-search"></i>
+   </button>
+      </div>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Name</th> <th>Price</th> <th>Checked</th>
+        </tr>
+        </thead>
+        <tbody>
+<!--        <tr *ngFor="let product of products$ | async">-->
+        <tr *ngFor="let product of appSatate.productsState.products">
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td *ngIf="appSatate.authState.roles.includes('ADMIN')">
+            <button (click)="handlCheckProduct(product)" class="btn btn-outline-success">
+            <i [class]="product.checked ? 'bi bi-check' : 'bi bi-circle' "></i>
+          </button>
+          </td>
+          <td *ngIf="appSatate.authState.roles.includes('ADMIN')">
+            <button (click)="handleleteProduct(product)" class="btn btn-outline-danger">
+            <i class="bi bi-trash"></i>
+          </button>
+            <span class="mx-2"></span>
+              <button (click)="handlEditProduct(product)" class="btn btn-outline-success">
+              <i class="bi bi-pencil"></i>
+            </button>
+
+          </td>
+        </tr>
+        </tbody>
+      </table>
+  <ul class="nav nav-pills">
+    <li *ngFor="let page of [].constructor(appSatate.productsState.totalPages);let i=index">
+      <button (click)="handleGetTo(i+1)"
+              [ngClass]="appSatate.productsState.currentPage == (i+1)?' btn-success':' btn-outline-success '"
+      class="btn m-1">
+              {{(i+1)}}</button>
+<!--              [class.btn-success]='currentPage == (i+1)' class="btn m-1">-->
+
+
+    </li>
+
+  </ul>
+    </div>
+  </div>
+</div>

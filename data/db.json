@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6IjE1MTYyMzkwMjIiLCJleHAiOiIxNTE2MjM5MDIyIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODg4L2F1dGgiLCJuYmYiOiIxNTE2MjM5MDIyIiwiZmlyc3RuYW1lIjoiTW9oYW1lZCIsImxhc3RuYW1lIjoiWU9VU1NGSSIsImVtYWlsIjoibWVkQGdtYWlsLmNvbSIsInJvbGVzIjpbIlVTRVIiXX0.KmCYhZpmBnCt6YJVngAIypXKmgT5GSoe7e13aPzF2wo"
+    },
+    {
+      "id": "user2",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMiIsImlhdCI6IjE1MTYyMzkwMjIiLCJleHAiOiIxNTE2MjM5MDIyIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODg4L2F1dGgiLCJuYmYiOiIxNTE2MjM5MDIyIiwiZmlyc3RuYW1lIjoiTW9oYW1lZCIsImxhc3RuYW1lIjoiWU9VU1NGSSIsImVtYWlsIjoibWVkQGdtYWlsLmNvbSIsInJvbGVzIjpbIlVTRVIiXX0.KlmXWILH2q-VNySpMF3DvjK2aKMs0XAxqEGNpNvgnHE"
+    },
+    {
+      "id": "admin",
+      "password": "MTIzNA==",
+      "roles": [
+        "USER",
+        "ADMIN"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6IjE1MTYyMzkwMjIiLCJleHAiOiIxNTE2MjM5MDIyIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODg4L2F1dGgiLCJuYmYiOiIxNTE2MjM5MDIyIiwiZmlyc3RuYW1lIjoiTW9oYW1lZCIsImxhc3RuYW1lIjoiWU9VU1NGSSIsImVtYWlsIjoibWVkQGdtYWlsLmNvbSIsInJvbGVzIjpbIlVTRVIiLCJBRE1JTiJdfQ.HcSed2px1faumX4FkLLk2p2bOY2-8fmggxJZgUvCTgs"
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "name": "Phone",
+      "price": "140",
+      "checked": true
+    },
+    {
+      "id": 5,
+      "name": "PC",
+      "price": "234",
+      "checked": false
+    },
+    {
+      "id": 6,
+      "name": "Disque",
+      "price": "234",
+      "checked": false
+    },
+    {
+      "id": 7,
+      "name": "Ecran Samung",
+      "price": "234",
+      "checked": true
+    },
+    {
+      "name": "iphone",
+      "price": "3000",
+      "checked": true,
+      "id": 8
+    },
+    {
+      "name": "lis",
+      "price": "3333334",
+      "checked": false,
+      "id": 9
+    }
+  ]
+}
